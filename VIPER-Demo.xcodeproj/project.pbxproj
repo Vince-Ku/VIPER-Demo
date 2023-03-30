@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		6105216C29D5779100277DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6105216B29D5779100277DC7 /* AppDelegate.swift */; };
 		6105216E29D5779100277DC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6105216D29D5779100277DC7 /* SceneDelegate.swift */; };
-		6105217029D5779100277DC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6105216F29D5779100277DC7 /* ViewController.swift */; };
-		6105217329D5779100277DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6105217129D5779100277DC7 /* Main.storyboard */; };
 		6105217529D5779200277DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6105217429D5779200277DC7 /* Assets.xcassets */; };
 		6105217829D5779200277DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6105217629D5779200277DC7 /* LaunchScreen.storyboard */; };
 		6105218329D5779200277DC7 /* VIPER_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6105218229D5779200277DC7 /* VIPER_DemoTests.swift */; };
 		6105218D29D5779200277DC7 /* VIPER_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6105218C29D5779200277DC7 /* VIPER_DemoUITests.swift */; };
 		6105218F29D5779200277DC7 /* VIPER_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6105218E29D5779200277DC7 /* VIPER_DemoUITestsLaunchTests.swift */; };
+		6105219D29D577F400277DC7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6105219C29D577F400277DC7 /* HomeViewController.swift */; };
+		6105219F29D57C3800277DC7 /* StartUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6105219E29D57C3800277DC7 /* StartUpRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		6105216829D5779100277DC7 /* VIPER-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6105216B29D5779100277DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6105216D29D5779100277DC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6105216F29D5779100277DC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6105217229D5779100277DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6105217429D5779200277DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6105217729D5779200277DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6105217929D5779200277DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		6105218829D5779200277DC7 /* VIPER-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6105218C29D5779200277DC7 /* VIPER_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_DemoUITests.swift; sourceTree = "<group>"; };
 		6105218E29D5779200277DC7 /* VIPER_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6105219C29D577F400277DC7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6105219E29D57C3800277DC7 /* StartUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,10 @@
 		6105216A29D5779100277DC7 /* VIPER-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				610521A029D57EBA00277DC7 /* Home */,
+				6105219B29D577DC00277DC7 /* Routers */,
 				6105216B29D5779100277DC7 /* AppDelegate.swift */,
 				6105216D29D5779100277DC7 /* SceneDelegate.swift */,
-				6105216F29D5779100277DC7 /* ViewController.swift */,
-				6105217129D5779100277DC7 /* Main.storyboard */,
 				6105217429D5779200277DC7 /* Assets.xcassets */,
 				6105217629D5779200277DC7 /* LaunchScreen.storyboard */,
 				6105217929D5779200277DC7 /* Info.plist */,
@@ -125,6 +125,22 @@
 				6105218E29D5779200277DC7 /* VIPER_DemoUITestsLaunchTests.swift */,
 			);
 			path = "VIPER-DemoUITests";
+			sourceTree = "<group>";
+		};
+		6105219B29D577DC00277DC7 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				6105219E29D57C3800277DC7 /* StartUpRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		610521A029D57EBA00277DC7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6105219C29D577F400277DC7 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +249,6 @@
 			files = (
 				6105217829D5779200277DC7 /* LaunchScreen.storyboard in Resources */,
 				6105217529D5779200277DC7 /* Assets.xcassets in Resources */,
-				6105217329D5779100277DC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6105217029D5779100277DC7 /* ViewController.swift in Sources */,
 				6105216C29D5779100277DC7 /* AppDelegate.swift in Sources */,
 				6105216E29D5779100277DC7 /* SceneDelegate.swift in Sources */,
+				6105219F29D57C3800277DC7 /* StartUpRouter.swift in Sources */,
+				6105219D29D577F400277DC7 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6105217129D5779100277DC7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6105217229D5779100277DC7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6105217629D5779200277DC7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +450,6 @@
 				INFOPLIST_FILE = "VIPER-Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +477,6 @@
 				INFOPLIST_FILE = "VIPER-Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
