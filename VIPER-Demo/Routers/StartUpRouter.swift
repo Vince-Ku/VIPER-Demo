@@ -11,6 +11,6 @@ class StartUpRouter {
     
     // setup the initial module when the app launched
     static func createModule() -> UIViewController {
-        HomeViewController()
+        HomeRouter.createModule()
     }
 }

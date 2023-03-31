@@ -16,6 +16,10 @@
 		6105218F29D5779200277DC7 /* VIPER_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6105218E29D5779200277DC7 /* VIPER_DemoUITestsLaunchTests.swift */; };
 		6105219D29D577F400277DC7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6105219C29D577F400277DC7 /* HomeViewController.swift */; };
 		6105219F29D57C3800277DC7 /* StartUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6105219E29D57C3800277DC7 /* StartUpRouter.swift */; };
+		610521A229D5815D00277DC7 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610521A129D5815D00277DC7 /* HomePresenter.swift */; };
+		610521A429D5816800277DC7 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610521A329D5816800277DC7 /* HomeInteractor.swift */; };
+		610521A629D5817300277DC7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610521A529D5817300277DC7 /* HomeRouter.swift */; };
+		610522B729D690DA00277DC7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522B629D690DA00277DC7 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		6105218E29D5779200277DC7 /* VIPER_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6105219C29D577F400277DC7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6105219E29D57C3800277DC7 /* StartUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpRouter.swift; sourceTree = "<group>"; };
+		610521A129D5815D00277DC7 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		610521A329D5816800277DC7 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		610521A529D5817300277DC7 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		610522B629D690DA00277DC7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		6105216A29D5779100277DC7 /* VIPER-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				610522B529D690A900277DC7 /* Model */,
 				610521A029D57EBA00277DC7 /* Home */,
 				6105219B29D577DC00277DC7 /* Routers */,
 				6105216B29D5779100277DC7 /* AppDelegate.swift */,
@@ -131,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				6105219E29D57C3800277DC7 /* StartUpRouter.swift */,
+				610521A529D5817300277DC7 /* HomeRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -139,8 +149,18 @@
 			isa = PBXGroup;
 			children = (
 				6105219C29D577F400277DC7 /* HomeViewController.swift */,
+				610521A129D5815D00277DC7 /* HomePresenter.swift */,
+				610521A329D5816800277DC7 /* HomeInteractor.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		610522B529D690A900277DC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				610522B629D690DA00277DC7 /* Constant.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +295,11 @@
 			files = (
 				6105216C29D5779100277DC7 /* AppDelegate.swift in Sources */,
 				6105216E29D5779100277DC7 /* SceneDelegate.swift in Sources */,
+				610521A629D5817300277DC7 /* HomeRouter.swift in Sources */,
+				610522B729D690DA00277DC7 /* Constant.swift in Sources */,
 				6105219F29D57C3800277DC7 /* StartUpRouter.swift in Sources */,
+				610521A429D5816800277DC7 /* HomeInteractor.swift in Sources */,
+				610521A229D5815D00277DC7 /* HomePresenter.swift in Sources */,
 				6105219D29D577F400277DC7 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
