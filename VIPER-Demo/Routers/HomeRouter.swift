@@ -9,7 +9,7 @@ import UIKit
 
 class HomeRouter: HomeRouterType {
     static func createModule() -> UIViewController {
-        let interactor = HomeInteractor()
+        let interactor = HomeInteractor(lotteryRepository: LotteryRepository())
         let router = HomeRouter()
         let presenter = HomePresenter(interactor: interactor, router: router)
         let viewController = HomeViewController(presenter: presenter)

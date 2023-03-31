@@ -9,8 +9,14 @@ import Foundation
 
 class HomeInteractor: HomeInteractorType {
 
+    private let lotteryRepository: LotteryRepositoryType
+    
+    init(lotteryRepository: LotteryRepositoryType) {
+        self.lotteryRepository = lotteryRepository
+    }
+    
     func getLotteryResult(completion: (LotteryResult) -> Void) {
-        fetechLotteryNumber { luckyNumber in
+        lotteryRepository.fetechLotteryNumber { luckyNumber in
             // if this logic become more complex, you can encapsulate to another object (e.g. LottertUseCase)
             if luckyNumber > 50 {
                 completion(.win)
@@ -18,10 +24,5 @@ class HomeInteractor: HomeInteractorType {
                 completion(.lose)
             }
         }
-    }
-    
-    // fetching data from the data layer, such as Repository
-    private func fetechLotteryNumber(completion: (Int) -> Void) {
-        completion(Int.random(in: 0...99))
     }
 }
