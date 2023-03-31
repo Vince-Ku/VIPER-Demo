@@ -20,8 +20,7 @@ class HomePresenter {
     
     // MARK: Input
     func topButtonDidTap() {
-        // TODO: topButtonDidTap implement
-        print("topButtonDidTap")
+        router.navigateToRecordsModule()
     }
 
     func bottomButtonDidTap() {

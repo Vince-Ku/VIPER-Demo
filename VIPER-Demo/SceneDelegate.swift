@@ -9,8 +9,20 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    public static var shared: SceneDelegate? {
+        UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
+    }
+    
     var window: UIWindow?
-
+    var topViewController: UIViewController? {
+        var topViewController = window?.rootViewController
+        
+        while topViewController?.presentedViewController != nil {
+            topViewController = topViewController!.presentedViewController
+        }
+        
+        return topViewController
+    }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

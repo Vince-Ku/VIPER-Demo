@@ -16,4 +16,11 @@ class HomeRouter {
         
         return viewController
     }
+    
+    // Module transition
+    func navigateToRecordsModule() {
+        let recordsViewController = RecordsRouter.createModule()
+        
+        SceneDelegate.shared?.topViewController?.present(recordsViewController, animated: true)
+    }
 }

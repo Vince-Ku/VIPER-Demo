@@ -20,6 +20,7 @@
 		610521A429D5816800277DC7 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610521A329D5816800277DC7 /* HomeInteractor.swift */; };
 		610521A629D5817300277DC7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610521A529D5817300277DC7 /* HomeRouter.swift */; };
 		610522B729D690DA00277DC7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522B629D690DA00277DC7 /* Constant.swift */; };
+		610522B929D69E5200277DC7 /* RecordsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522B829D69E5200277DC7 /* RecordsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		610521A329D5816800277DC7 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		610521A529D5817300277DC7 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		610522B629D690DA00277DC7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		610522B829D69E5200277DC7 /* RecordsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				6105219E29D57C3800277DC7 /* StartUpRouter.swift */,
 				610521A529D5817300277DC7 /* HomeRouter.swift */,
+				610522B829D69E5200277DC7 /* RecordsRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				610521A629D5817300277DC7 /* HomeRouter.swift in Sources */,
 				610522B729D690DA00277DC7 /* Constant.swift in Sources */,
 				6105219F29D57C3800277DC7 /* StartUpRouter.swift in Sources */,
+				610522B929D69E5200277DC7 /* RecordsRouter.swift in Sources */,
 				610521A429D5816800277DC7 /* HomeInteractor.swift in Sources */,
 				610521A229D5815D00277DC7 /* HomePresenter.swift in Sources */,
 				6105219D29D577F400277DC7 /* HomeViewController.swift in Sources */,
