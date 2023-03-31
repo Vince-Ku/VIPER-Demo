@@ -8,12 +8,12 @@
 import Foundation
 
 class HomePresenter {
-    private let interactor: HomeInteractor
-    private let router: HomeRouter
+    private let interactor: HomeInteractorType
+    private let router: HomeRouterType
 
     weak var viewDelegate: HomeViewControllerDelegate?
     
-    init(interactor: HomeInteractor, router: HomeRouter) {
+    init(interactor: HomeInteractorType, router: HomeRouterType) {
         self.interactor = interactor
         self.router = router
     }

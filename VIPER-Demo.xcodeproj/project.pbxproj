@@ -21,6 +21,8 @@
 		610521A629D5817300277DC7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610521A529D5817300277DC7 /* HomeRouter.swift */; };
 		610522B729D690DA00277DC7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522B629D690DA00277DC7 /* Constant.swift */; };
 		610522B929D69E5200277DC7 /* RecordsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522B829D69E5200277DC7 /* RecordsRouter.swift */; };
+		610522BB29D6A93500277DC7 /* HomeRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522BA29D6A93500277DC7 /* HomeRouterType.swift */; };
+		610522BD29D6AA0F00277DC7 /* HomeInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522BC29D6AA0F00277DC7 /* HomeInteractorType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		610521A529D5817300277DC7 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		610522B629D690DA00277DC7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		610522B829D69E5200277DC7 /* RecordsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsRouter.swift; sourceTree = "<group>"; };
+		610522BA29D6A93500277DC7 /* HomeRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterType.swift; sourceTree = "<group>"; };
+		610522BC29D6AA0F00277DC7 /* HomeInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,8 @@
 				6105219C29D577F400277DC7 /* HomeViewController.swift */,
 				610521A129D5815D00277DC7 /* HomePresenter.swift */,
 				610521A329D5816800277DC7 /* HomeInteractor.swift */,
+				610522BA29D6A93500277DC7 /* HomeRouterType.swift */,
+				610522BC29D6AA0F00277DC7 /* HomeInteractorType.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -296,7 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610522BD29D6AA0F00277DC7 /* HomeInteractorType.swift in Sources */,
 				6105216C29D5779100277DC7 /* AppDelegate.swift in Sources */,
+				610522BB29D6A93500277DC7 /* HomeRouterType.swift in Sources */,
 				6105216E29D5779100277DC7 /* SceneDelegate.swift in Sources */,
 				610521A629D5817300277DC7 /* HomeRouter.swift in Sources */,
 				610522B729D690DA00277DC7 /* Constant.swift in Sources */,

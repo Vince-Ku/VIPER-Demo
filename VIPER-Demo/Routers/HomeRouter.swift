@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeRouter {
+class HomeRouter: HomeRouterType {
     static func createModule() -> UIViewController {
         let interactor = HomeInteractor()
         let router = HomeRouter()

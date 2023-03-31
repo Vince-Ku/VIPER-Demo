@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HomeInteractor {
+class HomeInteractor: HomeInteractorType {
 
     func getLotteryResult(completion: (LotteryResult) -> Void) {
         fetechLotteryNumber { luckyNumber in
