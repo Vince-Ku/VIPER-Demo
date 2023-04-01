@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct RecordCellViewObject {
-    enum TitleStyle {
+struct RecordCellViewObject: Equatable {
+    enum TitleStyle: Equatable {
         case regular(String)
         case highLight(String)
     }

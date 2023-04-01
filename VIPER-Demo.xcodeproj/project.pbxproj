@@ -35,6 +35,7 @@
 		610522DA29D82AC200277DC7 /* OrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522D929D82AC200277DC7 /* OrderRepository.swift */; };
 		610522DC29D82AD900277DC7 /* OrderRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522DB29D82AD900277DC7 /* OrderRepositoryType.swift */; };
 		610522DE29D82B0600277DC7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522DD29D82B0600277DC7 /* Order.swift */; };
+		610522E129D8354B00277DC7 /* RecordsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522E029D8354B00277DC7 /* RecordsPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		610522D929D82AC200277DC7 /* OrderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepository.swift; sourceTree = "<group>"; };
 		610522DB29D82AD900277DC7 /* OrderRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepositoryType.swift; sourceTree = "<group>"; };
 		610522DD29D82B0600277DC7 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		610522E029D8354B00277DC7 /* RecordsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		6105218129D5779200277DC7 /* VIPER-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				610522DF29D8353000277DC7 /* Records */,
 				610522C329D7F7D200277DC7 /* Home */,
 			);
 			path = "VIPER-DemoTests";
@@ -204,6 +207,14 @@
 				610522D129D8073700277DC7 /* RecordsInteractorType.swift */,
 				610522D329D815D200277DC7 /* RecordCellViewObject.swift */,
 				610522D529D81CBB00277DC7 /* RecordTableViewCell.swift */,
+			);
+			path = Records;
+			sourceTree = "<group>";
+		};
+		610522DF29D8353000277DC7 /* Records */ = {
+			isa = PBXGroup;
+			children = (
+				610522E029D8354B00277DC7 /* RecordsPresenterTests.swift */,
 			);
 			path = Records;
 			sourceTree = "<group>";
@@ -339,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610522E129D8354B00277DC7 /* RecordsPresenterTests.swift in Sources */,
 				610522C729D800B900277DC7 /* HomeInteractorTests.swift in Sources */,
 				610522C529D7F7F300277DC7 /* HomePresenterTests.swift in Sources */,
 			);
