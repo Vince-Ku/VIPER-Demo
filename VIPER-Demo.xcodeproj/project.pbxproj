@@ -124,10 +124,9 @@
 		6105216A29D5779100277DC7 /* VIPER-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				610522C829D8067000277DC7 /* Records */,
+				61DA899F29D855DC00F98999 /* Modules */,
 				610522BE29D6AC0900277DC7 /* Repository */,
-				610522B529D690A900277DC7 /* Model */,
-				610521A029D57EBA00277DC7 /* Home */,
+				610522B529D690A900277DC7 /* AppModel */,
 				6105219B29D577DC00277DC7 /* Routers */,
 				6105216B29D5779100277DC7 /* AppDelegate.swift */,
 				6105216D29D5779100277DC7 /* SceneDelegate.swift */,
@@ -141,8 +140,7 @@
 		6105218129D5779200277DC7 /* VIPER-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				610522DF29D8353000277DC7 /* Records */,
-				610522C329D7F7D200277DC7 /* Home */,
+				61DA89A029D855F100F98999 /* Modules */,
 			);
 			path = "VIPER-DemoTests";
 			sourceTree = "<group>";
@@ -160,7 +158,7 @@
 		610521A029D57EBA00277DC7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				6105219C29D577F400277DC7 /* HomeViewController.swift */,
+				61DA89A229D8563C00F98999 /* View */,
 				610521A129D5815D00277DC7 /* HomePresenter.swift */,
 				610521A329D5816800277DC7 /* HomeInteractor.swift */,
 				610522BA29D6A93500277DC7 /* HomeRouterType.swift */,
@@ -169,23 +167,22 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		610522B529D690A900277DC7 /* Model */ = {
+		610522B529D690A900277DC7 /* AppModel */ = {
 			isa = PBXGroup;
 			children = (
 				610522B629D690DA00277DC7 /* Constant.swift */,
-				610522D729D828DD00277DC7 /* Record.swift */,
 			);
-			path = Model;
+			path = AppModel;
 			sourceTree = "<group>";
 		};
 		610522BE29D6AC0900277DC7 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				61DA89A329D8565600F98999 /* ApiModel */,
 				610522BF29D6AC5600277DC7 /* LotteryRepository.swift */,
 				610522C129D6ACAB00277DC7 /* LotteryRepositoryType.swift */,
 				610522D929D82AC200277DC7 /* OrderRepository.swift */,
 				610522DB29D82AD900277DC7 /* OrderRepositoryType.swift */,
-				610522DD29D82B0600277DC7 /* Order.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -202,13 +199,12 @@
 		610522C829D8067000277DC7 /* Records */ = {
 			isa = PBXGroup;
 			children = (
-				610522C929D8068200277DC7 /* RecordsViewController.swift */,
+				61DA89A429D8571300F98999 /* Model */,
+				61DA89A129D8561C00F98999 /* View */,
 				610522CB29D806C100277DC7 /* RecordsPresenter.swift */,
 				610522CD29D806CA00277DC7 /* RecordsInteractor.swift */,
 				610522CF29D806D400277DC7 /* RecordsRouterType.swift */,
 				610522D129D8073700277DC7 /* RecordsInteractorType.swift */,
-				610522D329D815D200277DC7 /* RecordCellViewObject.swift */,
-				610522D529D81CBB00277DC7 /* RecordTableViewCell.swift */,
 			);
 			path = Records;
 			sourceTree = "<group>";
@@ -220,6 +216,58 @@
 				61DA899D29D8507D00F98999 /* RecordsInteractorTests.swift */,
 			);
 			path = Records;
+			sourceTree = "<group>";
+		};
+		61DA899F29D855DC00F98999 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				610521A029D57EBA00277DC7 /* Home */,
+				610522C829D8067000277DC7 /* Records */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		61DA89A029D855F100F98999 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				610522C329D7F7D200277DC7 /* Home */,
+				610522DF29D8353000277DC7 /* Records */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		61DA89A129D8561C00F98999 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				610522C929D8068200277DC7 /* RecordsViewController.swift */,
+				610522D529D81CBB00277DC7 /* RecordTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61DA89A229D8563C00F98999 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6105219C29D577F400277DC7 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61DA89A329D8565600F98999 /* ApiModel */ = {
+			isa = PBXGroup;
+			children = (
+				610522DD29D82B0600277DC7 /* Order.swift */,
+			);
+			path = ApiModel;
+			sourceTree = "<group>";
+		};
+		61DA89A429D8571300F98999 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				610522D729D828DD00277DC7 /* Record.swift */,
+				610522D329D815D200277DC7 /* RecordCellViewObject.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
