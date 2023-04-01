@@ -9,9 +9,32 @@ import Foundation
 
 class RecordsInteractor: RecordsInteractorType {
 
-    func getRecords(completion: ([String]) -> Void) {
-        // TODO: implement getRecords, use Records object instead
-        completion(["1", "2", "3", "4", "5"])
+    private let orderRepository: OrderRepositoryType
+    
+    init(orderRepository: OrderRepositoryType) {
+        self.orderRepository = orderRepository
+    }
+    
+    func getRecords(completion: ([Record]) -> Void) {
+        orderRepository.fetchOrders(completion: { [weak self] orders in
+            guard let self = self else { return }
+            let records = self.transform(orders: orders)
+            completion(records)
+        })
+    }
+    
+    private func transform(orders: [Order]) -> [Record] {
+        var records: [Record] = []
+        
+        for order in orders {
+            let record = Record(lotteryNumber: Int(order.lotteryNumber) ?? 0,
+                                lotteryResult: order.lotteryResult ? .win : .lose,
+                                createdDate: order.createdData)
+            
+            records.append(record)
+        }
+        
+        return records
     }
     
 }

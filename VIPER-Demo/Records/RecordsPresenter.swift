@@ -29,12 +29,21 @@ class RecordsPresenter {
         })
     }
     
-    // TODO: implement this function, use Records Object instead
-    private func tranform(records: [String]) -> [RecordCellViewObject] {
+    private func tranform(records: [Record]) -> [RecordCellViewObject] {
         var viewObjects: [RecordCellViewObject] = []
         
         for record in records {
-            viewObjects.append(RecordCellViewObject(titleStyle: .highLight(record), detailColumnText: "123213213", starImageStyle: .none))
+            switch record.lotteryResult {
+            case .win:
+                viewObjects.append(RecordCellViewObject(titleStyle: .highLight("恭喜中獎！！"),
+                                                        detailColumnText: "您抽中的號碼為 \(record.lotteryNumber)",
+                                                        starImageStyle: .regular))
+
+            case .lose:
+                viewObjects.append(RecordCellViewObject(titleStyle: .regular("下次再來"),
+                                                        detailColumnText: "您抽中的號碼為 \(record.lotteryNumber)",
+                                                        starImageStyle: .none))
+            }
         }
         
         return viewObjects

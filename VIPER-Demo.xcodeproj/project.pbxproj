@@ -34,6 +34,10 @@
 		610522D229D8073700277DC7 /* RecordsInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522D129D8073700277DC7 /* RecordsInteractorType.swift */; };
 		610522D429D815D200277DC7 /* RecordCellViewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522D329D815D200277DC7 /* RecordCellViewObject.swift */; };
 		610522D629D81CBB00277DC7 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522D529D81CBB00277DC7 /* RecordTableViewCell.swift */; };
+		610522D829D828DD00277DC7 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522D729D828DD00277DC7 /* Record.swift */; };
+		610522DA29D82AC200277DC7 /* OrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522D929D82AC200277DC7 /* OrderRepository.swift */; };
+		610522DC29D82AD900277DC7 /* OrderRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522DB29D82AD900277DC7 /* OrderRepositoryType.swift */; };
+		610522DE29D82B0600277DC7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522DD29D82B0600277DC7 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		610522D129D8073700277DC7 /* RecordsInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsInteractorType.swift; sourceTree = "<group>"; };
 		610522D329D815D200277DC7 /* RecordCellViewObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCellViewObject.swift; sourceTree = "<group>"; };
 		610522D529D81CBB00277DC7 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		610522D729D828DD00277DC7 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		610522D929D82AC200277DC7 /* OrderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepository.swift; sourceTree = "<group>"; };
+		610522DB29D82AD900277DC7 /* OrderRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepositoryType.swift; sourceTree = "<group>"; };
+		610522DD29D82B0600277DC7 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				610522B629D690DA00277DC7 /* Constant.swift */,
+				610522D729D828DD00277DC7 /* Record.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +211,9 @@
 			children = (
 				610522BF29D6AC5600277DC7 /* LotteryRepository.swift */,
 				610522C129D6ACAB00277DC7 /* LotteryRepositoryType.swift */,
+				610522D929D82AC200277DC7 /* OrderRepository.swift */,
+				610522DB29D82AD900277DC7 /* OrderRepositoryType.swift */,
+				610522DD29D82B0600277DC7 /* Order.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -370,10 +382,14 @@
 				610521A629D5817300277DC7 /* HomeRouter.swift in Sources */,
 				610522B729D690DA00277DC7 /* Constant.swift in Sources */,
 				6105219F29D57C3800277DC7 /* StartUpRouter.swift in Sources */,
+				610522D829D828DD00277DC7 /* Record.swift in Sources */,
+				610522DA29D82AC200277DC7 /* OrderRepository.swift in Sources */,
+				610522DC29D82AD900277DC7 /* OrderRepositoryType.swift in Sources */,
 				610522B929D69E5200277DC7 /* RecordsRouter.swift in Sources */,
 				610521A429D5816800277DC7 /* HomeInteractor.swift in Sources */,
 				610522C029D6AC5600277DC7 /* LotteryRepository.swift in Sources */,
 				610521A229D5815D00277DC7 /* HomePresenter.swift in Sources */,
+				610522DE29D82B0600277DC7 /* Order.swift in Sources */,
 				610522D429D815D200277DC7 /* RecordCellViewObject.swift in Sources */,
 				6105219D29D577F400277DC7 /* HomeViewController.swift in Sources */,
 				610522CE29D806CA00277DC7 /* RecordsInteractor.swift in Sources */,

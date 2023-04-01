@@ -11,7 +11,7 @@ class RecordsRouter: RecordsRouterType {
     
     static func createModule() -> UIViewController {
         let router = RecordsRouter()
-        let interactor = RecordsInteractor()
+        let interactor = RecordsInteractor(orderRepository: OrderRepository())
         let presenter = RecordsPresenter(router: router, interactor: interactor)
         let viewController = RecordsViewController(presenter: presenter)
         

@@ -8,6 +8,5 @@
 import Foundation
 
 protocol RecordsInteractorType {
-    // TODO: use Records Object instead
-    func getRecords(completion: ([String]) -> Void)
+    func getRecords(completion: ([Record]) -> Void)
 }
