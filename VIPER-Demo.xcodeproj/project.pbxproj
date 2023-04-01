@@ -36,6 +36,7 @@
 		610522DC29D82AD900277DC7 /* OrderRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522DB29D82AD900277DC7 /* OrderRepositoryType.swift */; };
 		610522DE29D82B0600277DC7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522DD29D82B0600277DC7 /* Order.swift */; };
 		610522E129D8354B00277DC7 /* RecordsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522E029D8354B00277DC7 /* RecordsPresenterTests.swift */; };
+		61DA899E29D8507D00F98999 /* RecordsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DA899D29D8507D00F98999 /* RecordsInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		610522DB29D82AD900277DC7 /* OrderRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepositoryType.swift; sourceTree = "<group>"; };
 		610522DD29D82B0600277DC7 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		610522E029D8354B00277DC7 /* RecordsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsPresenterTests.swift; sourceTree = "<group>"; };
+		61DA899D29D8507D00F98999 /* RecordsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				610522E029D8354B00277DC7 /* RecordsPresenterTests.swift */,
+				61DA899D29D8507D00F98999 /* RecordsInteractorTests.swift */,
 			);
 			path = Records;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				610522E129D8354B00277DC7 /* RecordsPresenterTests.swift in Sources */,
 				610522C729D800B900277DC7 /* HomeInteractorTests.swift in Sources */,
 				610522C529D7F7F300277DC7 /* HomePresenterTests.swift in Sources */,
+				61DA899E29D8507D00F98999 /* RecordsInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

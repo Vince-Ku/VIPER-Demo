@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Record {
+struct Record: Equatable {
     let lotteryNumber: Int
     let lotteryResult: LotteryResult
     let createdDate: Date
