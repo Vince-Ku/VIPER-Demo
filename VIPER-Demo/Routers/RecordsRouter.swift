@@ -7,10 +7,14 @@
 
 import UIKit
 
-class RecordsRouter {
+class RecordsRouter: RecordsRouterType {
     
     static func createModule() -> UIViewController {
-        // TODO: implement Records module
-        UIViewController()
+        let router = RecordsRouter()
+        let interactor = RecordsInteractor()
+        let presenter = RecordsPresenter(router: router, interactor: interactor)
+        let viewController = RecordsViewController(presenter: presenter)
+        
+        return viewController
     }
 }

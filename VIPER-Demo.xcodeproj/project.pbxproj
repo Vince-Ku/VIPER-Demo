@@ -27,6 +27,13 @@
 		610522C229D6ACAB00277DC7 /* LotteryRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522C129D6ACAB00277DC7 /* LotteryRepositoryType.swift */; };
 		610522C529D7F7F300277DC7 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522C429D7F7F300277DC7 /* HomePresenterTests.swift */; };
 		610522C729D800B900277DC7 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522C629D800B900277DC7 /* HomeInteractorTests.swift */; };
+		610522CA29D8068200277DC7 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522C929D8068200277DC7 /* RecordsViewController.swift */; };
+		610522CC29D806C100277DC7 /* RecordsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522CB29D806C100277DC7 /* RecordsPresenter.swift */; };
+		610522CE29D806CA00277DC7 /* RecordsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522CD29D806CA00277DC7 /* RecordsInteractor.swift */; };
+		610522D029D806D400277DC7 /* RecordsRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522CF29D806D400277DC7 /* RecordsRouterType.swift */; };
+		610522D229D8073700277DC7 /* RecordsInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522D129D8073700277DC7 /* RecordsInteractorType.swift */; };
+		610522D429D815D200277DC7 /* RecordCellViewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522D329D815D200277DC7 /* RecordCellViewObject.swift */; };
+		610522D629D81CBB00277DC7 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522D529D81CBB00277DC7 /* RecordTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,13 @@
 		610522C129D6ACAB00277DC7 /* LotteryRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryRepositoryType.swift; sourceTree = "<group>"; };
 		610522C429D7F7F300277DC7 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
 		610522C629D800B900277DC7 /* HomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		610522C929D8068200277DC7 /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		610522CB29D806C100277DC7 /* RecordsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsPresenter.swift; sourceTree = "<group>"; };
+		610522CD29D806CA00277DC7 /* RecordsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsInteractor.swift; sourceTree = "<group>"; };
+		610522CF29D806D400277DC7 /* RecordsRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsRouterType.swift; sourceTree = "<group>"; };
+		610522D129D8073700277DC7 /* RecordsInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsInteractorType.swift; sourceTree = "<group>"; };
+		610522D329D815D200277DC7 /* RecordCellViewObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCellViewObject.swift; sourceTree = "<group>"; };
+		610522D529D81CBB00277DC7 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +135,7 @@
 		6105216A29D5779100277DC7 /* VIPER-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				610522C829D8067000277DC7 /* Records */,
 				610522BE29D6AC0900277DC7 /* Repository */,
 				610522B529D690A900277DC7 /* Model */,
 				610521A029D57EBA00277DC7 /* Home */,
@@ -198,6 +213,20 @@
 				610522C629D800B900277DC7 /* HomeInteractorTests.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		610522C829D8067000277DC7 /* Records */ = {
+			isa = PBXGroup;
+			children = (
+				610522C929D8068200277DC7 /* RecordsViewController.swift */,
+				610522CB29D806C100277DC7 /* RecordsPresenter.swift */,
+				610522CD29D806CA00277DC7 /* RecordsInteractor.swift */,
+				610522CF29D806D400277DC7 /* RecordsRouterType.swift */,
+				610522D129D8073700277DC7 /* RecordsInteractorType.swift */,
+				610522D329D815D200277DC7 /* RecordCellViewObject.swift */,
+				610522D529D81CBB00277DC7 /* RecordTableViewCell.swift */,
+			);
+			path = Records;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,10 +360,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				610522BD29D6AA0F00277DC7 /* HomeInteractorType.swift in Sources */,
+				610522CA29D8068200277DC7 /* RecordsViewController.swift in Sources */,
 				6105216C29D5779100277DC7 /* AppDelegate.swift in Sources */,
 				610522C229D6ACAB00277DC7 /* LotteryRepositoryType.swift in Sources */,
 				610522BB29D6A93500277DC7 /* HomeRouterType.swift in Sources */,
 				6105216E29D5779100277DC7 /* SceneDelegate.swift in Sources */,
+				610522CC29D806C100277DC7 /* RecordsPresenter.swift in Sources */,
+				610522D029D806D400277DC7 /* RecordsRouterType.swift in Sources */,
 				610521A629D5817300277DC7 /* HomeRouter.swift in Sources */,
 				610522B729D690DA00277DC7 /* Constant.swift in Sources */,
 				6105219F29D57C3800277DC7 /* StartUpRouter.swift in Sources */,
@@ -342,7 +374,11 @@
 				610521A429D5816800277DC7 /* HomeInteractor.swift in Sources */,
 				610522C029D6AC5600277DC7 /* LotteryRepository.swift in Sources */,
 				610521A229D5815D00277DC7 /* HomePresenter.swift in Sources */,
+				610522D429D815D200277DC7 /* RecordCellViewObject.swift in Sources */,
 				6105219D29D577F400277DC7 /* HomeViewController.swift in Sources */,
+				610522CE29D806CA00277DC7 /* RecordsInteractor.swift in Sources */,
+				610522D629D81CBB00277DC7 /* RecordTableViewCell.swift in Sources */,
+				610522D229D8073700277DC7 /* RecordsInteractorType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
