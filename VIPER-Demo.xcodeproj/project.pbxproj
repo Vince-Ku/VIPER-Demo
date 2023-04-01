@@ -25,6 +25,7 @@
 		610522BD29D6AA0F00277DC7 /* HomeInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522BC29D6AA0F00277DC7 /* HomeInteractorType.swift */; };
 		610522C029D6AC5600277DC7 /* LotteryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522BF29D6AC5600277DC7 /* LotteryRepository.swift */; };
 		610522C229D6ACAB00277DC7 /* LotteryRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522C129D6ACAB00277DC7 /* LotteryRepositoryType.swift */; };
+		610522C529D7F7F300277DC7 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610522C429D7F7F300277DC7 /* HomePresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		610522BC29D6AA0F00277DC7 /* HomeInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorType.swift; sourceTree = "<group>"; };
 		610522BF29D6AC5600277DC7 /* LotteryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryRepository.swift; sourceTree = "<group>"; };
 		610522C129D6ACAB00277DC7 /* LotteryRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryRepositoryType.swift; sourceTree = "<group>"; };
+		610522C429D7F7F300277DC7 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		6105218129D5779200277DC7 /* VIPER-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				610522C329D7F7D200277DC7 /* Home */,
 				6105218229D5779200277DC7 /* VIPER_DemoTests.swift */,
 			);
 			path = "VIPER-DemoTests";
@@ -184,6 +187,14 @@
 				610522C129D6ACAB00277DC7 /* LotteryRepositoryType.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		610522C329D7F7D200277DC7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				610522C429D7F7F300277DC7 /* HomePresenterTests.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6105218329D5779200277DC7 /* VIPER_DemoTests.swift in Sources */,
+				610522C529D7F7F300277DC7 /* HomePresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
