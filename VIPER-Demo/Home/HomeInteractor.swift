@@ -17,7 +17,11 @@ class HomeInteractor: HomeInteractorType {
     
     func getLotteryResult(completion: (LotteryResult) -> Void) {
         lotteryRepository.fetechLotteryNumber { luckyNumber in
+            //
+            // Note that this logic would be put into the Backend system in the real world
+            //
             // if this logic become more complex, you can encapsulate to another object (e.g. LottertUseCase)
+            //
             if luckyNumber > 50 {
                 completion(.win)
             } else {

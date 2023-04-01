@@ -22,21 +22,21 @@ class HomeViewController: UIViewController {
         return stackView
     }()
     
-    private let topButton: UIButton = {
+    private let recordsButton: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Top Button", for: .normal)
+        btn.setTitle("Lottery Records", for: .normal)
         btn.titleLabel?.font = .systemFont(ofSize: 20)
-        btn.addTarget(nil, action: #selector(topButtonDidTap), for: .touchUpInside)
+        btn.addTarget(nil, action: #selector(recordsButtonDidTap), for: .touchUpInside)
         return btn
     }()
     
-    private let bottomButton: UIButton = {
+    private let lotteryButton: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Bottom Button", for: .normal)
+        btn.setTitle("Go Lottery!", for: .normal)
         btn.titleLabel?.font = .systemFont(ofSize: 20)
-        btn.addTarget(nil, action: #selector(bottomButtonDidTap), for: .touchUpInside)
+        btn.addTarget(nil, action: #selector(lotteryButtonDidTap), for: .touchUpInside)
         return btn
     }()
     
@@ -64,8 +64,8 @@ class HomeViewController: UIViewController {
     private func setupButtonsLayout() {
         view.addSubview(buttonsContainerStackView)
         
-        buttonsContainerStackView.addArrangedSubview(topButton)
-        buttonsContainerStackView.addArrangedSubview(bottomButton)
+        buttonsContainerStackView.addArrangedSubview(recordsButton)
+        buttonsContainerStackView.addArrangedSubview(lotteryButton)
         
         NSLayoutConstraint.activate([
             buttonsContainerStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -75,17 +75,17 @@ class HomeViewController: UIViewController {
         ])
     }
     
-    @objc func topButtonDidTap() {
-        presenter.topButtonDidTap()
+    @objc func recordsButtonDidTap() {
+        presenter.recordsButtonDidTap()
     }
     
-    @objc func bottomButtonDidTap() {
-        presenter.bottomButtonDidTap()
+    @objc func lotteryButtonDidTap() {
+        presenter.lotteryButtonDidTap()
     }
 }
 
 extension HomeViewController: HomeViewControllerDelegate {
     func showLotteryResult(result: LotteryResult) {
-        bottomButton.setTitle(result.rawValue, for: .normal)
+        lotteryButton.setTitle(result.rawValue, for: .normal)
     }
 }

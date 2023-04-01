@@ -11,6 +11,7 @@ class HomePresenter {
     private let interactor: HomeInteractorType
     private let router: HomeRouterType
 
+    // MARK: Output
     weak var viewDelegate: HomeViewControllerDelegate?
     
     init(interactor: HomeInteractorType, router: HomeRouterType) {
@@ -19,11 +20,11 @@ class HomePresenter {
     }
     
     // MARK: Input
-    func topButtonDidTap() {
+    func recordsButtonDidTap() {
         router.navigateToRecordsModule()
     }
 
-    func bottomButtonDidTap() {
+    func lotteryButtonDidTap() {
         interactor.getLotteryResult { [weak self] result in
             self?.viewDelegate?.showLotteryResult(result: result)
         }

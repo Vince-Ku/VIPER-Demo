@@ -13,46 +13,46 @@ final class HomePresenterTests: XCTestCase {
     private var sut: HomePresenter!
     
     ///
-    /// `Top Button` 點擊後，開啟 `Records` 模組
+    /// `Records Button` 點擊後，開啟 `Records` 模組
     ///
-    func testTopButtonDidTapAndThenOpenRecordsModule() {
+    func testRecordsButtonDidTapAndThenOpenRecordsModule() {
         let mockHomeViewControllerDelegate = MockHomeViewControllerDelegate()
         let mockHomeInteractor = MockHomeInteractor(lotteryResult: .win)
         let mockHomeRouter = MockHomeRouter()
         
         sut = makeSUT(viewDelegate: mockHomeViewControllerDelegate, interactor: mockHomeInteractor, router: mockHomeRouter)
         
-        sut.topButtonDidTap()
+        sut.recordsButtonDidTap()
         
         XCTAssertTrue(mockHomeRouter.calledFunctions.contains(where: { $0 == .navigateToRecordsModule }))
     }
     
     ///
-    /// `Buttom Button` 點擊後，執行`抽獎動作`，抽獎結果`勝利`並顯示在畫面上。
+    /// `Lottery Button` 點擊後，執行`抽獎動作`，抽獎結果`勝利`並顯示在畫面上。
     ///
-    func testButtomButtonDidTapAndThenShowSuccessfulResult() {
+    func testLotteryButtonDidTapAndThenShowSuccessfulResult() {
         let mockHomeViewControllerDelegate = MockHomeViewControllerDelegate()
         let mockHomeInteractor = MockHomeInteractor(lotteryResult: .win)
         let mockHomeRouter = MockHomeRouter()
         
         sut = makeSUT(viewDelegate: mockHomeViewControllerDelegate, interactor: mockHomeInteractor, router: mockHomeRouter)
         
-        sut.bottomButtonDidTap()
+        sut.lotteryButtonDidTap()
         
         XCTAssertTrue(mockHomeViewControllerDelegate.calledFunctions.contains(where: { $0 == .showLotteryResult(.win) }))
     }
     
     ///
-    /// `Buttom Button` 點擊後，執行`抽獎動作`，抽獎結果`失敗`並顯示在畫面上。
+    /// `Lottery Button` 點擊後，執行`抽獎動作`，抽獎結果`失敗`並顯示在畫面上。
     ///
-    func testButtomButtonDidTapAndThenShowFailedResult() {
+    func testLotteryButtonDidTapAndThenShowFailedResult() {
         let mockHomeViewControllerDelegate = MockHomeViewControllerDelegate()
         let mockHomeInteractor = MockHomeInteractor(lotteryResult: .lose)
         let mockHomeRouter = MockHomeRouter()
         
         sut = makeSUT(viewDelegate: mockHomeViewControllerDelegate, interactor: mockHomeInteractor, router: mockHomeRouter)
         
-        sut.bottomButtonDidTap()
+        sut.lotteryButtonDidTap()
         
         XCTAssertTrue(mockHomeViewControllerDelegate.calledFunctions.contains(where: { $0 == .showLotteryResult(.lose) }))
     }
