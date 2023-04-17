@@ -38,28 +38,28 @@ final class RecordsPresenterTests: XCTestCase {
                                  starImageStyle: .regular)
         ]
         
-        let delegate = MockRecordsViewControllerDelegate()
+        let delegate = MockRecordsPresenterOutputDelegate()
         let router = MockRecordsRouter()
         let interactor = MockRecordsInteractor(records: mockRecords)
             
-        sut = makeSUT(viewDelegate: delegate, router: router, interactor: interactor)
+        sut = makeSUT(delegate: delegate, router: router, interactor: interactor)
         
         sut.viewDidLoad()
         
         XCTAssertTrue(delegate.calledFunctions.contains(where: { $0 == .releadRecords(expectedRecordCellViewObject)}))
     }
         
-    private func makeSUT(viewDelegate: RecordsViewControllerDelegate, router: RecordsRouterType, interactor: RecordsInteractorType) -> RecordsPresenter {
+    private func makeSUT(delegate: RecordsPresenterOutputDelegate, router: RecordsRouterType, interactor: RecordsInteractorType) -> RecordsPresenter {
         let presenter = RecordsPresenter(router: router, interactor: interactor)
-        presenter.viewDelegate = viewDelegate
+        presenter.delegate = delegate
         return presenter
     }
 }
 
 // MARK: Mock Objects
-private class MockRecordsViewControllerDelegate: RecordsViewControllerDelegate {
+private class MockRecordsPresenterOutputDelegate: RecordsPresenterOutputDelegate {
     enum Function: Equatable {
-        static func == (lhs: MockRecordsViewControllerDelegate.Function, rhs: MockRecordsViewControllerDelegate.Function) -> Bool {
+        static func == (lhs: MockRecordsPresenterOutputDelegate.Function, rhs: MockRecordsPresenterOutputDelegate.Function) -> Bool {
             switch (lhs, rhs) {
             case (.releadRecords(let lViewObjects), .releadRecords(let rViewObjects)):
                 return lViewObjects == rViewObjects

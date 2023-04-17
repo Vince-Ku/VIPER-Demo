@@ -7,13 +7,17 @@
 
 import Foundation
 
+protocol RecordsPresenterOutputDelegate: AnyObject {
+    func reloadRecords(records: [RecordCellViewObject])
+}
+
 class RecordsPresenter {
     
     private let router: RecordsRouterType
     private let interactor: RecordsInteractorType
     
     // MARK: Output
-    weak var viewDelegate: RecordsViewControllerDelegate?
+    weak var delegate: RecordsPresenterOutputDelegate?
     
     init(router: RecordsRouterType, interactor: RecordsInteractorType) {
         self.router = router
@@ -25,7 +29,7 @@ class RecordsPresenter {
         interactor.getRecords(completion: { [weak self] records in
             guard let self = self else { return }
             let recordsViewObjects = self.tranform(records: records)
-            self.viewDelegate?.reloadRecords(records: recordsViewObjects)
+            self.delegate?.reloadRecords(records: recordsViewObjects)
         })
     }
     

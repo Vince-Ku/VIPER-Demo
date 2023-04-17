@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol RecordsViewControllerDelegate: AnyObject {
-    func reloadRecords(records: [RecordCellViewObject])
-}
-
 class RecordsViewController: UIViewController {
     
     private let recordsTableView: UITableView = {
@@ -21,7 +17,7 @@ class RecordsViewController: UIViewController {
     
     private var recordsViewObject: [RecordCellViewObject] = []
     
-    private let presenter: RecordsPresenter!
+    private let presenter: RecordsPresenter
     
     init(presenter: RecordsPresenter) {
         self.presenter = presenter
@@ -57,7 +53,7 @@ class RecordsViewController: UIViewController {
     }
     
     private func setupDelegate() {
-        presenter.viewDelegate = self
+        presenter.delegate = self
     }
 }
 
@@ -77,7 +73,7 @@ extension RecordsViewController: UITableViewDataSource {
     
 }
 
-extension RecordsViewController: RecordsViewControllerDelegate {
+extension RecordsViewController: RecordsPresenterOutputDelegate {
     func reloadRecords(records: [RecordCellViewObject]) {
         recordsViewObject = records
         recordsTableView.reloadData()
